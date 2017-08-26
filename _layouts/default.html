@@ -5,7 +5,7 @@
     <div id="top">
       <div class="box">
           <nav class="nav">
-            <a class="pagename current" href="/">Waqasy</a>
+            <a class="pagename current" href="/">site.name</a>
               <a href="{{ '/about/' | prepend: site.url }}">About</a>
               <a href="{{ '/work/' | prepend: site.url }}">Work</a>
               <a href="{{ '/archive/' | prepend: site.url }}">Archive</a>
@@ -19,7 +19,7 @@
     </div>
     <footer>
       <center>
-        &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}.
+        &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.name }}
       </center>
     </footer>
     {% include analytics.html %}
