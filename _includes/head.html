@@ -1,0 +1,131 @@
+<head>
+	<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+	
+    <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    {% if page.excerpt %}
+    <meta name="description" content="{{ page.excerpt| strip_html }}" />
+    <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
+    {% else %}
+    <meta name="description" content="{{ site.description }}">
+    <meta property="og:description" content="{{ site.description }}" />
+    {% endif %}
+    <meta name="author" content="{{ site.name }}" />
+
+    {% if page.title %}
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="twitter:title" content="{{ page.title }}" />
+    {% endif %}
+	
+    <style>
+    a {
+        text-decoration: none;
+    }
+
+    a:link {
+        color: #00D;
+    }
+
+    a:visited {
+        color: purple;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    body,
+    div {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font: 110%/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: #222;
+    }
+
+    p,
+    ul,
+    blockquote,
+    pre {
+        margin: 0 0 1em;
+    }
+
+    h1,
+    h2 {
+        font-weight: 700;
+        font-size: 1.3em;
+        margin: 0 0 .5em;
+    }
+
+    h1 {
+        color: #117;
+    }
+
+    blockquote {
+        font-style: italic;
+    }
+
+    pre {
+        overflow: auto;
+    }
+
+    .box {
+        margin: 0 auto;
+        padding: 0 12px;
+    }
+
+    #top {
+        background: #000;
+    }
+
+    #content {
+        padding-top: 3em;
+    }
+
+    /* nav bar extract from mincss */
+    .nav,
+    .nav .current,
+    .nav a:hover {
+        background: #000;
+        color: #fff;
+    }
+
+    .nav {
+        height: 24px;
+        padding: 11px 0 15px;
+    }
+
+    .nav a {
+        color: #aaa;
+        padding-right: 1em;
+        top: -1px;
+    }
+
+    .nav .pagename {
+        font-size: 22px;
+        top: 1px;
+    }
+
+    .post {
+        padding-bottom: 3em;
+    }
+
+    @media screen and (min-width:768px) {
+        blockquote,
+        pre {
+            margin-left: 1.25em
+        }
+        .box {
+            max-width: 840px
+        }
+    }
+    </style>
+    <meta name="google-site-verification" content="RhAVoNC9XwORDxCe6EUJ_qW2FtLTKVM4Q6uxrmpPOwY" />
+    <link rel="alternate" type="application/rss+xml" title="Tuan Anh" href="https://tuananh.org /feed.xml " />
+</head>
